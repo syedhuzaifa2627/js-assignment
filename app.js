@@ -29,7 +29,7 @@
 // var rule3 = "Variables names are case sensitive. <br>"
 
 // var rule4 = "Variables names should not be Js keywords."
- 
+
 //  document.writeln(rule1 + rule2 + rule3 + rule4)
 
 
@@ -53,7 +53,7 @@
 // document.writeln("Modulus of " + num1 + " and " + num2 + " is " + modNum+ ". <br>")
 
 // Question 3
- 
+
 //var num;
 //document.writeln("Value after variable declaration is: " + num + ". <br>")
 
@@ -244,8 +244,49 @@
 
 // Quesion 3
 
- var username = prompt("Enter your name")
+//var username = prompt("Enter your name")
 
- alert("Hello" + " " + username + "\n" +"Welcome to my JS world!")
+//alert("Hello" + " " + username + "\n" +"Welcome to my JS world!")
 
+// Question 4
+
+//var num = prompt("Enter a number:", 5);
+//if (num >= 20) {
+//    num = 5;
+//}
+//document.writeln("Multiplication Table of " + num + "<br>");
+//document.writeln(num + " × 1 = " + (num * 1) + "<br>");
+//document.writeln(num + " × 2 = " + (num * 2) + "<br>");
+//document.writeln(num + " × 3 = " + (num * 3) + "<br>");
+//document.writeln(num + " × 4 = " + (num * 4) + "<br>");
+//document.writeln(num + " × 5 = " + (num * 5) + "<br>");
+//document.writeln(num + " × 6 = " + (num * 6) + "<br>");
+//document.writeln(num + " × 7 = " + (num * 7) + "<br>");
+//document.writeln(num + " × 8 = " + (num * 8) + "<br>");
+//document.writeln(num + " × 9 = " + (num * 9) + "<br>");
+//document.writeln(num + " × 10 = " + (num * 10) + "<br>");
+
+// Question 5
+
+var sub1 = prompt("Enter first subject name:");
+var sub2 = prompt("Enter second subject name:");
+var sub3 = prompt("Enter third subject name:");
+
+const totalMarks = 100
+
+let marks1 = Number(prompt("Enter obtained marks for " + sub1 + ":"))
+let marks2 = Number(prompt("Enter obtained marks for " + sub2 + ":"))
+let marks3 = Number(prompt("Enter obtained marks for " + sub3 + ":"))
+
+const totalObtained = marks1 + marks2 + marks3;
+const percentage = (totalObtained / (totalMarks * 3)) * 100;
+
+document.writeln("<table border='1' cellspacing='0' cellpadding='5'>");
+document.writeln("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+document.writeln("<tr><td>" + sub1 + "</td><td>" + totalMarks + "</td><td>" + marks1 + "</td></tr>");
+document.writeln("<tr><td>" + sub2 + "</td><td>" + totalMarks + "</td><td>" + marks2 + "</td></tr>");
+document.writeln("<tr><td>" + sub3 + "</td><td>" + totalMarks + "</td><td>" + marks3 + "</td></tr>");
+document.writeln("<tr><th>Total</th><th>" + (totalMarks * 3) + "</th><th>" + totalObtained + "</th></tr>");
+document.writeln("<tr><th colspan='2'>Percentage</th><th>" + percentage.toFixed(2) + "%</th></tr>");
+document.writeln("</table>");
 
